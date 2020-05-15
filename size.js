@@ -37,16 +37,12 @@ pageHeight = document.body.getBoundingClientRect().height;
   +($(".personthree").offset().left-($(".personetwo").offset().left + $(".personetwo").width()))/2-$(".peopleright").width()/2)
   });
     
-    
-    	$(".kamienas").css({
-  				'height':(window.innerHeight - $(".treeleaf").height() + 100)
- 				});
+    	var kamienaslength = window.innerHeight - $(".treeleaf").height();
+	if(kamienaslength < 300) { kamienaslength = 300;
+				 $(".kamienassticky").css({'top':(-400)});}
+    	$(".kamienas").css({'height':(kamienaslength + 100)});
         
-        if(window.innerHeight<600) {
-        	$(".kamienassticky").css({
-  				'top':(-100)
- 				});
-        }
+        
      
   
    $(".middlevalue").css(
