@@ -193,7 +193,7 @@ $('.persononecar').slick({
   infinite: true,
   draggable: false,
   arrows: true,
-  initialSlide : 1,
+  initialSlide : 2,
   fade: true,
   asNavFor: '.persononecar',
   prevArrow: $('.peopleleft'),
