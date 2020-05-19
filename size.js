@@ -65,12 +65,13 @@ pageHeight = document.body.getBoundingClientRect().height;
    
    
     $('.item').on('init', function(event, slick){
-    dis =((75+$(".processname").offset().left) - ($(".slick-center").offset().left+100));
+	    if (window.innerWidth > 768) {
+		    dis =((75+$(".processname").offset().left) - ($(".slick-center").offset().left+100));
+		    $(".processtop").css({
+			    'left':dis
+		    });
    
-    $(".processtop").css({
-    'left':dis
-   });
-   
+	    }
    var line = $('.spaceline').first().offset().top-$('.process').offset().top;
    
    $(".linetop").css({
@@ -318,10 +319,11 @@ $(window).on('resize', function(){
    $(".linetop").css({
     'top': line
    });
-
+	if (window.innerWidth > 768) {
 		var dis2 =(parseInt($('.processtop').css('left')) + (75+$(".processname").offset().left) - ($(".slick-center").offset().left+100));
     console.log(parseInt($('.processtop').css('left')));
     $(".processtop").css({'left':(dis2)});
+	}
     $(".emptyspace").css({'height':($(".centerbranch").height())});
     $(".branch").css({'height':($(".centerbranch").height())});
     $(".personone").css(
