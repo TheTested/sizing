@@ -22,7 +22,7 @@ pageHeight = document.body.getBoundingClientRect().height;
     'top': (0.75 * $(".centerbranch").height()),
     'left':($(".emptyspace").width() + $(".branchbend").width() + $(".branch").width()+ $(".centerbranch").width()+ $(".branchbend").width()/2 + $(".branch").width()- $(".personone").width()/2)
     });
-    
+    if(window.innerWidth > 767) {
     $(".peopleleft").css(
   {
   'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
@@ -36,6 +36,17 @@ pageHeight = document.body.getBoundingClientRect().height;
   'left':($(".personetwo").offset().left + $(".personetwo").width()
   +($(".personthree").offset().left-($(".personetwo").offset().left + $(".personetwo").width()))/2-$(".peopleright").width()/2)
   });
+    } else {
+	 $(".peopleleft").css(
+  {
+  'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
+  'left':(0);
+  
+  $(".peopleright").css(
+  {
+  'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
+  'rigth':(0);   
+    }
     
     	var kamienaslength = window.innerHeight - $(".treeleaf").height();
 	if(kamienaslength < 300) { kamienaslength = 300;
