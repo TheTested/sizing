@@ -40,12 +40,14 @@ pageHeight = document.body.getBoundingClientRect().height;
 	 $(".peopleleft").css(
   {
   'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
-  'left':(0);
+  'left':(0)
+	  );
   
   $(".peopleright").css(
   {
   'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
-  'rigth':(0);   
+  'rigth':(0)
+	  );   
     }
     
     	var kamienaslength = window.innerHeight - $(".treeleaf").height();
