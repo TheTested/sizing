@@ -49,12 +49,12 @@ pageHeight = document.body.getBoundingClientRect().height;
   'right':(0)
   });  
     }
-    
+    if(window.innerWidth > 767) {
     	var kamienaslength = window.innerHeight - $(".treeleaf").height();
 	if(kamienaslength < 300) { kamienaslength = 300;
 				 $(".kamienassticky").css({'top':(-400)});}
     	$(".kamienas").css({'height':(kamienaslength + 100)});
-        
+    }
         
      
   
@@ -304,10 +304,11 @@ $(window).on('resize', function(){
   const dHeight = newPageHeight / pageHeight
   window.scrollTo(0, currentOffset * dHeight)
   pageHeight = newPageHeight
-  
+  if(window.innerWidth > 767) {
   $(".kamienas").css({
   				'height':(window.innerHeight - $(".treeleaf").height() + 100)
  				});
+  }
   
   $(".middlevalue").css(
   {
