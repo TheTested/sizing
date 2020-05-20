@@ -113,7 +113,7 @@ pageHeight = document.body.getBoundingClientRect().height;
   centerMode: true,
   focusOnSelect: true,
   asNavFor: '.description',
-  draggable: false,
+  draggable: true,
   arrows: false,
 });
 $('.leftarrow').addClass('hidden');
