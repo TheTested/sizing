@@ -110,11 +110,10 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    outerEdgeLimit: true,
 	    variableWidth: true,
 	    slidesToScroll: 1,
-	    swipe: true,
   centerMode: true,
   focusOnSelect: true,
   asNavFor: '.description',
-  draggable: true,
+  draggable: false,
   arrows: false,
 });
 $('.leftarrow').addClass('hidden');
@@ -125,6 +124,8 @@ $('.description').slick({
   speed: 500,
   fade: true,
   cssEase: 'linear',
+	swipe: true,
+	draggable: true,
   asNavFor: '.item',
   prevArrow: $('.leftarrow'),
   nextArrow: $('.rightarrow'),
