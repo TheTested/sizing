@@ -39,13 +39,13 @@ pageHeight = document.body.getBoundingClientRect().height;
     } else {
 	 $(".peopleleft").css(
   {
-  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height()),
+  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height()-$(".facts").height()),
   'left':(0)
   });
   
    $(".peopleright").css(
   {
-  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height()),
+  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height()-$(".facts").height()),
   'right':(0)
   });  
     }
