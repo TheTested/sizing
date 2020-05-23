@@ -37,9 +37,9 @@ pageHeight = document.body.getBoundingClientRect().height;
   +($(".personthree").offset().left-($(".personetwo").offset().left + $(".personetwo").width()))/2-$(".peopleright").width()/2)
   });
     } else {
-	    $(".personetwo").css(
+	    $(".personone, .personetwo, .personthree").css(
     {
-    'top': (0.5 * $(".centerbranch").height())
+    'top': (0.6 * $(".centerbranch").height())
     });
 	 $(".peopleleft").css(
   {
@@ -385,6 +385,10 @@ $(window).on('resize', function(){
   +($(".personthree").offset().left-($(".personetwo").offset().left + $(".personetwo").width()))/2-$(".peopleright").width()/2)
   });
     } else {
+	    $(".personone, .personetwo, .personthree").css(
+    {
+    'top': (0.6 * $(".centerbranch").height())
+    });
 	 $(".peopleleft").css(
   {
   'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height() - $(".peopleleft").height()  -$(".people").offset().top)
