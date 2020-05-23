@@ -37,6 +37,10 @@ pageHeight = document.body.getBoundingClientRect().height;
   +($(".personthree").offset().left-($(".personetwo").offset().left + $(".personetwo").width()))/2-$(".peopleright").width()/2)
   });
     } else {
+	    $(".personetwo").css(
+    {
+    'top': (0.5 * $(".centerbranch").height())
+    });
 	 $(".peopleleft").css(
   {
   'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height() - $(".peopleleft").height()  -$(".people").offset().top)
