@@ -124,6 +124,7 @@ $('.description').slick({
   speed: 500,
   fade: true,
   cssEase: 'linear',
+	asNavFor: '.description',
 	swipe: true,
 	draggable: true,
   asNavFor: '.item',
