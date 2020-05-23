@@ -112,9 +112,8 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    slidesToScroll: 1,
   centerMode: true,
   focusOnSelect: true,
-  asNavFor: '.description',
-	    prevArrow: $('.leftarrow'),
-  nextArrow: $('.rightarrow'),
+  asNavFor: '.description, #mobileslide',
+	    arrows: false,
   draggable: false,
 });
 $('.leftarrow').addClass('hidden');
@@ -124,13 +123,22 @@ $('.description').slick({
   infinite: true,
   speed: 500,
   fade: true,
-  cssEase: 'linear',
-	
+  cssEase: 'linear',	
 	swipe: true,
 	draggable: true,
-  asNavFor: '.item',
+  asNavFor: '.item, #mobileslide',
   prevArrow: $('.leftarrow'),
   nextArrow: $('.rightarrow'),
+  draggable: false
+});
+	
+	$('#mobileslide').slick({
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear',	
+	swipe: true,
+	draggable: true,
   draggable: false
 });
 
