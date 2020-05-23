@@ -39,14 +39,12 @@ pageHeight = document.body.getBoundingClientRect().height;
     } else {
 	 $(".peopleleft").css(
   {
-  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height() - $(".peopleleft").height()  -$(".people").offset().top),
-  'left':(0)
+  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height() - $(".peopleleft").height()  -$(".people").offset().top)
   });
   
    $(".peopleright").css(
   {
-  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height() - $(".peopleleft").height()  -$(".people").offset().top),
-  'right':(0)
+  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height() - $(".peopleleft").height()  -$(".people").offset().top)
   });  
     }
     if(window.innerWidth > 767) {
