@@ -113,8 +113,9 @@ pageHeight = document.body.getBoundingClientRect().height;
   centerMode: true,
   focusOnSelect: true,
   asNavFor: '.description',
+	    prevArrow: $('.leftarrow'),
+  nextArrow: $('.rightarrow'),
   draggable: false,
-  arrows: false,
 });
 $('.leftarrow').addClass('hidden');
 $('.up').addClass('hidden');
@@ -124,7 +125,7 @@ $('.description').slick({
   speed: 500,
   fade: true,
   cssEase: 'linear',
-	asNavFor: '.description',
+	
 	swipe: true,
 	draggable: true,
   asNavFor: '.item',
