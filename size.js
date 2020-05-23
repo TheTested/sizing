@@ -366,18 +366,31 @@ $(window).on('resize', function(){
     'top':(0.75 * $(".centerbranch").height()),
     'left':($(".emptyspace").width() + $(".branchbend").width() + $(".branch").width()+ $(".centerbranch").width()+ $(".branchbend").width()/2 + $(".branch").width()- $(".personone").width()/2)
     });
+    if(window.innerWidth > 767) {
     $(".peopleleft").css(
   {
   'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
   'left':($(".personone").offset().left + $(".personone").width()
   +($(".personetwo").offset().left-($(".personone").offset().left + $(".personone").width()))/2-$(".peopleleft").width()/2)
   });
+  
   $(".peopleright").css(
   {
   'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
   'left':($(".personetwo").offset().left + $(".personetwo").width()
   +($(".personthree").offset().left-($(".personetwo").offset().left + $(".personetwo").width()))/2-$(".peopleright").width()/2)
   });
+    } else {
+	 $(".peopleleft").css(
+  {
+  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height() - $(".peopleleft").height()  -$(".people").offset().top)
+  });
+  
+   $(".peopleright").css(
+  {
+  'top':($("[id='imageleft']").offset().top + $("[id='imageleft']").height() - $(".peopleleft").height()  -$(".people").offset().top)
+  });  
+    }
     });
 
   
