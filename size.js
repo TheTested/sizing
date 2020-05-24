@@ -253,6 +253,17 @@ $('.persononecar').slick({
   speed: 500,
   cssEase: 'linear'
 });
+	
+	$('.personemobile').slick({
+  infinite: true,
+  draggable: false,
+  arrows: true,
+  fade: true,
+  prevArrow: $('.peopleleft'),
+  nextArrow: $('.peopleright'),
+  speed: 500,
+  cssEase: 'linear'
+});
 
 $('.callist').slick({
   infinite: false,
