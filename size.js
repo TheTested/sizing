@@ -111,7 +111,6 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    infinite: false,
 	    outerEdgeLimit: true,
 	    variableWidth: true,
-	    slidesToScroll: 1,
 	    swipe: true,
 	draggable: true,
   centerMode: true,
