@@ -256,7 +256,6 @@ $('.persononecar.personedesktop').slick({
   arrows: true,
   initialSlide : 2,
   fade: true,
-  asNavFor: '.persononecar',
   prevArrow: $('.peopleleft'),
   nextArrow: $('.peopleright'),
   speed: 500,
