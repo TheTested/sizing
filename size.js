@@ -111,6 +111,7 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    infinite: false,
 	    outerEdgeLimit: true,
 	    variableWidth: true,
+	    touchThreshold:100,
 	    swipe: true,
 	draggable: true,
   centerMode: true,
