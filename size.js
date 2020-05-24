@@ -250,7 +250,7 @@ $('.persononecar.personemobile').slick({
   speed: 500,
   cssEase: 'linear'
 });
-$('.persononecar').slick({
+$('.persononecar.personedesktop').slick({
   infinite: true,
   draggable: false,
   arrows: true,
