@@ -245,8 +245,8 @@ $('.persononecar.personemobile').slick({
   draggable: false,
   arrows: true,
   fade: true,
-  prevArrow: $('.peopleleft'),
-  nextArrow: $('.peopleright'),
+  prevArrow: $('#peopleleft'),
+  nextArrow: $('#peopleright'),
   speed: 500,
   cssEase: 'linear'
 });
@@ -254,6 +254,7 @@ $('.persononecar.personedesktop').slick({
   infinite: true,
   draggable: false,
   arrows: true,
+	asNavFor: '.persononecar',
   initialSlide : 2,
   fade: true,
   prevArrow: $('.peopleleft'),
