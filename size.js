@@ -254,11 +254,12 @@ $('.persononecar').slick({
   cssEase: 'linear'
 });
 	
-	$('.personemobile').slick({
+	$('.persononecar.personemobile').slick({
   infinite: true,
   draggable: false,
   arrows: true,
   fade: true,
+  asNavFor: '.persononecar',
   prevArrow: $('.peopleleft'),
   nextArrow: $('.peopleright'),
   speed: 500,
