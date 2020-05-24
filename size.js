@@ -254,7 +254,7 @@ $('.persononecar.personedesktop').slick({
   infinite: true,
   draggable: false,
   arrows: true,
-	asNavFor: '.persononecar',
+	asNavFor: '.persononecar.personedesktop',
   initialSlide : 2,
   fade: true,
   prevArrow: $('.peopleleft.desktop'),
