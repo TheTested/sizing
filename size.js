@@ -240,7 +240,16 @@ $('.caldetails').slick({
   speed: 500,
   cssEase: 'linear'
 });
-
+$('.persononecar.personemobile').slick({
+  infinite: true,
+  draggable: false,
+  arrows: true,
+  fade: true,
+  prevArrow: $('.peopleleft'),
+  nextArrow: $('.peopleright'),
+  speed: 500,
+  cssEase: 'linear'
+});
 $('.persononecar').slick({
   infinite: true,
   draggable: false,
@@ -254,17 +263,7 @@ $('.persononecar').slick({
   cssEase: 'linear'
 });
 	
-	$('.persononecar.personemobile').slick({
-  infinite: true,
-  draggable: false,
-  arrows: true,
-  fade: true,
-  asNavFor: '.persononecar',
-  prevArrow: $('.peopleleft'),
-  nextArrow: $('.peopleright'),
-  speed: 500,
-  cssEase: 'linear'
-});
+	
 
 $('.callist').slick({
   infinite: false,
