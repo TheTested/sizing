@@ -117,33 +117,6 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    arrows: false
     });
 	
-	var xCoordStart,
-    yCoordStart,
-    xSlideTrigger = 10,
-    slickElement = $(".item")
-
-slickElement.bind('touchstart', function (e){
-  xCoordStart = e.originalEvent.touches[0].clientX;
-  yCoordStart = e.originalEvent.touches[0].clientY;
-});
-
-slickElement.bind('touchend', function (e){
-  var xCoordEnd = e.originalEvent.changedTouches[0].clientX;
-  var yCoordEnd = e.originalEvent.changedTouches[0].clientY;
-
-  var deltaX = Math.abs(xCoordEnd - xCoordStart)
-  var deltaY = Math.abs(yCoordEnd - yCoordStart)
-
-  if(deltaX > deltaY){  // prevent slide while scrolling vertically
-    if(xCoordStart > xCoordEnd + xSlideTrigger){
-      slickElement.slick('slickNext');
-    }
-    else if(xCoordStart < xCoordEnd + xSlideTrigger){
-      slickElement.slick('slickPrev');
-    }
-  }
-
-});
 	
 $('.leftarrow').addClass('hidden');
 $('.up').addClass('hidden');
