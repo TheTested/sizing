@@ -109,7 +109,6 @@ pageHeight = document.body.getBoundingClientRect().height;
     
     $('.item').slick({
 	    infinite: false,
-	    outerEdgeLimit: true,
 	    variableWidth: true,
 	    centerMode: true,
 	    focusOnSelect: true,
