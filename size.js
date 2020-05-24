@@ -111,14 +111,13 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    infinite: false,
 	    outerEdgeLimit: true,
 	    variableWidth: true,
-	    touchThreshold:100,
-	    swipe: true,
-	draggable: true,
-  centerMode: true,
-  focusOnSelect: true,
-  asNavFor: '.description, #mobileslide',
-	    arrows: false
-});
+	    centerMode: true,
+	    focusOnSelect: true,
+	    asNavFor: '.description, #mobileslide',
+	    arrows: false,
+	    draggable: false
+    });
+	
 $('.leftarrow').addClass('hidden');
 $('.up').addClass('hidden');
 $('.up2').addClass('hidden');
