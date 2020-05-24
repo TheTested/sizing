@@ -113,9 +113,9 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    variableWidth: true,
 	    centerMode: true,
 	    focusOnSelect: true,
+	    slidesToScroll: 1,
 	    asNavFor: '.description, #mobileslide',
-	    arrows: false,
-	    draggable: false
+	    arrows: false
     });
 	
 $('.leftarrow').addClass('hidden');
