@@ -81,7 +81,7 @@ pageHeight = document.body.getBoundingClientRect().height;
    
     $('.item').on('init', function(event, slick){
 	    if (window.innerWidth > 768) {
-		    dis =((75+$(".processname").offset().left) - ($(".slick-center").offset().left+100));
+		    dis =($(".div-block-54.processtriangle").offset().left+25);
 		    $(".processtop").css({
 			    'left':dis
 		    });
