@@ -25,14 +25,14 @@ pageHeight = document.body.getBoundingClientRect().height;
     if(window.innerWidth > 767) {
     $(".peopleleft").css(
   {
-  'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
+  'top':(0.75 * $(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
   'left':($(".personone").offset().left + $(".personone").width()
   +($(".personetwo").offset().left-($(".personone").offset().left + $(".personone").width()))/2-$(".peopleleft").width()/2)
   });
   
   $(".peopleright").css(
   {
-  'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
+  'top':(0.75 * $(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
   'left':($(".personetwo").offset().left + $(".personetwo").width()
   +($(".personthree").offset().left-($(".personetwo").offset().left + $(".personetwo").width()))/2-$(".peopleright").width()/2)
   });
