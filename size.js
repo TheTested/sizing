@@ -362,33 +362,31 @@ $(window).on('resize', function(){
 	}
     $(".emptyspace").css({'height':($(".centerbranch").height())});
     $(".branch").css({'height':($(".centerbranch").height())});
-    $(".personone").css(
-    {
-    'top':(0.75 * $(".centerbranch").height()),
+    $(".personone").css({'top':(0.75 * $(".centerbranch").height()),
     'left':($(".emptyspace").width() + $(".branchbend").width()/2 - $(".personone").width()/2)
     });
     $(".personetwo").css(
     {
-    'top':(0.75 * $(".centerbranch").height()),
+    'top': (0.75 * $(".centerbranch").height()),
     'left':($(".emptyspace").width() + $(".branchbend").width() + $(".branch").width()+ $(".centerbranch").width()/2- $(".personone").width()/2)
     });
     
     $(".personthree").css(
     {
-    'top':(0.75 * $(".centerbranch").height()),
+    'top': (0.75 * $(".centerbranch").height()),
     'left':($(".emptyspace").width() + $(".branchbend").width() + $(".branch").width()+ $(".centerbranch").width()+ $(".branchbend").width()/2 + $(".branch").width()- $(".personone").width()/2)
     });
     if(window.innerWidth > 767) {
     $(".peopleleft").css(
   {
-  'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
+  'top':(0.75 * $(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
   'left':($(".personone").offset().left + $(".personone").width()
   +($(".personetwo").offset().left-($(".personone").offset().left + $(".personone").width()))/2-$(".peopleleft").width()/2)
   });
   
   $(".peopleright").css(
   {
-  'top':($(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
+  'top':(0.75 * $(".centerbranch").height()+ $("[id='imageleft']").height()/2-$(".peopleleft").height()/2),
   'left':($(".personetwo").offset().left + $(".personetwo").width()
   +($(".personthree").offset().left-($(".personetwo").offset().left + $(".personetwo").width()))/2-$(".peopleright").width()/2)
   });
