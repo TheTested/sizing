@@ -62,7 +62,7 @@ pageHeight = document.body.getBoundingClientRect().height;
   
    $(".middlevalue").css(
   {
-  'top':(-$(".valuetext").height() + 0.3 * $(".treeleaf").height()-20)
+  'top':(-$(".valuetext").height() + 0.05 * $(".treeleaf").height())
   });
     
     $(".values").css(
