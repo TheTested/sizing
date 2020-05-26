@@ -105,7 +105,6 @@ pageHeight = document.body.getBoundingClientRect().height;
     
 });
 
-});
     
     $('.item').slick({
 	    infinite: false,
