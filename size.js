@@ -360,9 +360,9 @@ $(window).on('resize', function(){
   }
   
   $(".middlevalue").css(
-  {
-  'top':(-$(".valuetext").height() + 0.3 * $(".treeleaf").height()),
-  });
+    {
+    'top':(-$(".valuetext").height() + 0.05 * $(".treeleaf").height())
+    });
   
   
     $(".values").css(
