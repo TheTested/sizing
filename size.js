@@ -144,10 +144,13 @@ $('.description').slick({
 $('.description').on('afterChange', function (event, slick, currentSlide) {
 
         if(currentSlide >= 21) {
+		
             $('.rightarrow').attr("src","https://uploads-ssl.webflow.com/5ea2c6f295e67d090a35c87f/5ed4e55da0977f0e5f4fa31f_rewind.png");
+		$('.rightarrow').css({'transform': 'rotate(0deg)'});
         }
         else {
             $('.rightarrow').attr("src","https://uploads-ssl.webflow.com/5ea2c6f295e67d090a35c87f/5eb571e95c02e67840e6ab9f_rodykle_zalia.png");
+		$('.rightarrow').css({'transform': 'rotate(180deg)'});
         }
 
         if(currentSlide === 0) {
