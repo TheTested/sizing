@@ -140,7 +140,13 @@ $('.description').slick({
 	draggable: true,
   draggable: false
 });
-
+$('.description').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+	if (currentSlide === 21 && nextSlide === 0) {
+      		setTimeout(function() {
+      			$('.item').slick("slickGoTo", 0);
+    		}, 3000);
+    }
+    })
 $('.description').on('afterChange', function (event, slick, currentSlide) {
 
         if(currentSlide >= 21) {
