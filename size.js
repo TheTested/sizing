@@ -110,7 +110,7 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    infinite: false,
 	    centerMode: true,
 	    draggable: true,
-	    touchThreshold: 5000,
+	    touchThreshold: 500,
 	    focusOnSelect: true,
 	    variableWidth: true,
 	    asNavFor: '.description, #mobileslide',
