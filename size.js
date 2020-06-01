@@ -112,7 +112,6 @@ pageHeight = document.body.getBoundingClientRect().height;
 	    draggable: true,
 	    focusOnSelect: true,
 	    variableWidth: true,
-	    slidesToShow: 1,
 	    asNavFor: '.description, #mobileslide',
 	    arrows: false,
 	    slidesToScroll: 1,
