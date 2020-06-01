@@ -142,10 +142,8 @@ $('.description').slick({
 });
 $('.description').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 	if (currentSlide === 21 && nextSlide === 0) {
-      		setTimeout(function() {
-      			$('.item').slick("slickGoTo", 0);
-    		}, 3000);
-    }
+		$('.item').slick("slickGoTo", 0);
+	}
     })
 $('.description').on('afterChange', function (event, slick, currentSlide) {
 
