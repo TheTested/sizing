@@ -126,7 +126,7 @@ $('.description').slick({
   speed: 500,
   fade: true,
   cssEase: 'linear',	
-  
+  asNavFor: '.item, #mobileslide',
   prevArrow: $('.leftarrow'),
   nextArrow: $('.rightarrow'),
   draggable: false
