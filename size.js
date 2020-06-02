@@ -136,6 +136,7 @@ $('.description').slick({
   infinite: true,
   speed: 500,
   fade: true,
+		arrows: false,
   cssEase: 'linear',	
 	swipe: true,
 	draggable: true,
